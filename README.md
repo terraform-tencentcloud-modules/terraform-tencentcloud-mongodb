@@ -5,6 +5,8 @@ Terraform module which creates Mongodb resources on TencentCloud
 
 ```hcl
 module "mongodb" {
+  source = "terraform-tencentcloud-modules/mongodb/tencentcloud"
+
   mongodb_instance_name  = "mongodb"
   memory                 = 4
   volume                 = 100
